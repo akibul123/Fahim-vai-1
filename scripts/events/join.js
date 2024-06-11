@@ -48,7 +48,7 @@ module.exports.run = async function({ api, event, Users }) {
   if (event.logMessageData.addedParticipants && Array.isArray(event.logMessageData.addedParticipants) && event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
     //api.changeNickname(`𝗕𝗢𝗧 ${(!global.config.BOTNAME) ? "Buddy" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
 
-    let gifUrl = 'https://i.imgur.com/DGYiyUo.jpeg';
+    let gifUrl = 'https://i.postimg.cc/nhybf9W7/received-320490950683263.jpg';
 let gifPath = __dirname + '/Nayan/join/join.jpeg';
 
 axios.get(gifUrl, { responseType: 'arraybuffer' })
@@ -70,11 +70,11 @@ ADMIN :MD fahim Islam
 
 🟣Facebook Account Link: 
 
-https://www.facebook.com/mdjubaet.ahmed.9
+https://www.facebook.com/profile.php?id=100046430705172 
 
 🔵WHATSAPP NUMBER: wa.me/+8801892323664
 
-🟢SUPPORT EMAIL: www.mdjubaetahmed124@gmail.com`, attachment: fs.createReadStream(gifPath)}, threadID));
+🟢SUPPORT EMAIL: www.akibulsheikh2@gmail.com`, attachment: fs.createReadStream(gifPath)}, threadID));
   }})
 .catch(error => {
     console.error(error);
